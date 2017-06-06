@@ -10,5 +10,5 @@ Enemy::Enemy() :
 }
 void Enemy::loadTexture()
 {
-    enemy_texture.loadFromFile("Graphics/badguy.png");
+    enemy_texture.loadFromFile("graphics/badguy.png");
 }

@@ -12,7 +12,7 @@ Pitchfork::Pitchfork() :
 
 void Pitchfork::loadTextures()
 {
-    forkTexture.loadFromFile("Graphics/fork.png");
+    forkTexture.loadFromFile("graphics/fork.png");
 }
 
 Player::Player()  :
@@ -28,5 +28,5 @@ Player::Player()  :
 
 void Player::loadTextures()
 {
-    playerTexture.loadFromFile("Graphics/player.png");
+    playerTexture.loadFromFile("graphics/player.png");
 }
