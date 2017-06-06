@@ -12,7 +12,7 @@ int main()
     sf::Event event;
 
     sf::Texture back;
-    back.loadFromFile("Graphics/background.png");
+    back.loadFromFile("graphics/background.png");
     sf::RectangleShape backg({800,600});
     backg.setTexture(&back);
 
