@@ -1,0 +1,15 @@
+# Ignore generated folders
+bin
+depend
+doc
+
+# Ignore generated files
+callgrind*
+vgcore*
+*~
+*.swp
+
+# Ignore binary files
+*.exe
+*.out
+pumpkin
