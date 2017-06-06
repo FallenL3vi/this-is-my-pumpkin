@@ -10,6 +10,7 @@ vgcore*
 *.swp
 
 # Ignore binary files
+*.o
 *.exe
 *.out
 pumpkin
