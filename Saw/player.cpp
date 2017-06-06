@@ -16,7 +16,7 @@ void Pitchfork::loadTextures()
 }
 
 Player::Player()  :
-    avatarP1({60.f,160.f}),
+    avatarP1({50.f,160.f}),
     fork()
 {
     loadTextures();
