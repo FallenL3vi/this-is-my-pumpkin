@@ -33,8 +33,5 @@ $(OBJ_DIR)/%.o : $(SOURCE_DIR)/%.cpp
 
 clean :
 	$(RM) -r $(OBJ_DIR) $(DEPEND_DIR) $(TARGET)
-	$(MAKE) -C ./$(TEST_DIR) clean
 
-ifneq ("$(wildcard $(DEPEND_DIR))","")
-	include $(subst $(OBJ_DIR),$(DEPEND_DIR),$(patsubst %.o,%.d,$(OBJ_FILES)))
-endif
+-include $(subst $(OBJ_DIR),$(DEPEND_DIR),$(patsubst %.o,%.d,$(OBJ_FILES)))
