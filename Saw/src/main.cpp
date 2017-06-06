@@ -7,10 +7,10 @@ int main()
 {
     Player player;
     Control control(player);
-       sf::Event event;
+    sf::Event event;
 
     sf::Texture back;
-    back.loadFromFile("background.png");
+    back.loadFromFile("Graphics/background.png");
     sf::RectangleShape backg({800,600});
     backg.setTexture(&back);
 
@@ -22,11 +22,11 @@ int main()
         {
             while( window.pollEvent( event ) )
             {
-             if( event.type == sf::Event::Closed )
-                window.close();
+                if( event.type == sf::Event::Closed )
+                    window.close();
 
-            if( event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
-                window.close();
+                if( event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+                    window.close();
             }
             window.clear(sf::Color::White);
             window.draw(backg);

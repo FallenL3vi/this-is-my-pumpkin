@@ -24,13 +24,13 @@ void Control::keyboard()
     {
         if(direction == 0)
         {
-        player.avatarP1.move(0,-speed_r);
-        player.fork.forkP1.move(0,-speed_r);
+            player.avatarP1.move(0,-speed_r);
+            player.fork.forkP1.move(0,-speed_r);
         }
         else
         {
-        player.avatarP1.move(0,-speed_l);
-        player.fork.forkP1.move(0,-speed_l);
+            player.avatarP1.move(0,-speed_l);
+            player.fork.forkP1.move(0,-speed_l);
         }
     }
 
@@ -38,13 +38,13 @@ void Control::keyboard()
     {
         if(direction == 0)
         {
-        player.avatarP1.move(0,speed_r);
-        player.fork.forkP1.move(0,speed_r);
+            player.avatarP1.move(0,speed_r);
+            player.fork.forkP1.move(0,speed_r);
         }
         else
         {
-        player.avatarP1.move(0,speed_l);
-        player.fork.forkP1.move(0,speed_l);
+            player.avatarP1.move(0,speed_l);
+            player.fork.forkP1.move(0,speed_l);
         }
     }
 
