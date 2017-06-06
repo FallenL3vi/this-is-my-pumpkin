@@ -2,10 +2,12 @@
 #include <SFML/Graphics.hpp>
 #include "player.hpp"
 #include "controls.hpp"
+#include "enemy.hpp"
 
 int main()
 {
     Player player;
+    Enemy enemy;
     Control control(player);
     sf::Event event;
 
@@ -31,6 +33,7 @@ int main()
             window.clear(sf::Color::White);
             window.draw(backg);
             window.draw(player.avatarP1);
+            window.draw(enemy.avatar_enemy);
             window.draw(player.fork.forkP1);
             control.keyboard();
             window.display();
