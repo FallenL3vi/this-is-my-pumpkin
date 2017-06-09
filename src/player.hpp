@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include "enemy.hpp"
 
 
 class Pitchfork
@@ -16,9 +17,14 @@ public:
 class Player
 {
 public:
-    Player();
+    Enemy &enemy;
+    Player(Enemy &_enemy);
     void loadTextures();
+    int knock_strange = 10;
     sf::RectangleShape avatarP1;
     sf::Texture playerTexture;
     Pitchfork fork;
+    void move(int speedX, int speedY, bool direction);
+    void flip();
+    void attack(int range, bool directions);
 };

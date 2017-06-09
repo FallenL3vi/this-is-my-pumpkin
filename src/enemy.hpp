@@ -1,4 +1,4 @@
-#include "player.hpp"
+#pragma once
 #include "SFML/Graphics.hpp"
 
 class Enemy
@@ -10,4 +10,5 @@ public:
     sf::Texture enemy_texture;
 
     void loadTexture();
+    void knockBack(bool direction,int knock_range);
 };

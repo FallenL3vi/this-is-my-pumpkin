@@ -6,17 +6,17 @@
 
 int main()
 {
-    Player player;
     Enemy enemy;
+    Player player(enemy);
     Control control(player);
     sf::Event event;
 
     sf::Texture back;
     back.loadFromFile("graphics/background.png");
-    sf::RectangleShape backg({800,600});
+    sf::RectangleShape backg({1400,900});
     backg.setTexture(&back);
 
-    sf::RenderWindow window( sf::VideoMode(800,600),"Game alpha 0.01v");
+    sf::RenderWindow window( sf::VideoMode(1400,900),"Game alpha 0.01v");
     {
 
         window.setFramerateLimit(60);

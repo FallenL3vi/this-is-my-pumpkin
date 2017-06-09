@@ -12,86 +12,36 @@ void Control::keyboard()
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     {
-        moving_l(direction);
+        if(direction == 0)
+        {
+            player.flip();
+            direction = 1;
+        }
+        player.move(-speed_move,0,direction);
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
     {
-        moving_r(direction);
+        if(direction == 1)
+        {
+            player.flip();
+            direction = 0;
+        }
+        player.move(speed_move,0,direction);
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
     {
-        if(direction == 0)
-        {
-            player.avatarP1.move(0,-speed_r);
-            player.fork.forkP1.move(0,-speed_r);
-        }
-        else
-        {
-            player.avatarP1.move(0,-speed_l);
-            player.fork.forkP1.move(0,-speed_l);
-        }
+        player.move(0,-speed_move,direction);
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
     {
-        if(direction == 0)
-        {
-            player.avatarP1.move(0,speed_r);
-            player.fork.forkP1.move(0,speed_r);
-        }
-        else
-        {
-            player.avatarP1.move(0,speed_l);
-            player.fork.forkP1.move(0,speed_l);
-        }
+        player.move(0,speed_move,direction);
     }
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::K))
     {
-        if(direction == 0)
-        {
-            player.fork.forkP1.move(40,0);
-        }
-
-        if(direction == 1)
-        {
-            player.fork.forkP1.move(-40,0);
-        }
+        player.attack(range, direction);
     }
-}
-
-void Control::moving_l(bool direct)
-{
-    speed_r = 0;
-    if(direction == 0)
-    {
-        player.avatarP1.scale(-1,1);
-        player.fork.forkP1.scale(-1,1);
-        direction = 1;
-    }
-    if(speed_l != max_speed)
-    {
-        speed_l += speed_move;
-    }
-    player.avatarP1.move(-speed_l,0);
-    player.fork.forkP1.move(-speed_l,0);
-}
-
-void Control::moving_r(bool direct)
-{
-    speed_l = 0;
-    if(direction == 1)
-    {
-        player.avatarP1.scale(-1,1);
-        player.fork.forkP1.scale(-1,1);
-        direction = 0;
-    }
-    if(speed_r != max_speed)
-    {
-        speed_r += speed_move;
-    }
-    player.avatarP1.move(speed_r,0);
-    player.fork.forkP1.move(speed_r,0);
 }

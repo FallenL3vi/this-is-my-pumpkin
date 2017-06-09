@@ -4,10 +4,8 @@ class Control
 {
 public:
 
-    int speed_move = 1;
-    int speed_l = 0;
-    int speed_r = 0;
-    int max_speed = 6;
+    int speed_move = 6;
+    int range = 50;
     bool direction = 0;
     Control(Player &_player);
     void keyboard();
