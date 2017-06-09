@@ -41,6 +41,12 @@ void Player::move(int speedX, int speedY, bool dire)
     {
     enemy.knockBack(dire,knock_strange);
     }
+
+    if(avatarP1.getGlobalBounds().intersects(enemy.avatar_enemy.getGlobalBounds()))
+    {
+     avatarP1.move(-(speedX),-(speedY));
+     fork.forkP1.move(-(speedX),-(speedY));
+    }
 }
 
 void Player::flip()
