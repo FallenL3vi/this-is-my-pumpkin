@@ -16,7 +16,7 @@ int main()
     sf::RectangleShape backg({1400,900});
     backg.setTexture(&back);
 
-    sf::RenderWindow window( sf::VideoMode(1400,900),"Game alpha 0.01v");
+    sf::RenderWindow window( sf::VideoMode(1400,900),"Game alpha 0.01v", sf::Style::Titlebar);
     {
 
         window.setFramerateLimit(60);
