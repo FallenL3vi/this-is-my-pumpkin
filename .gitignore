@@ -2,12 +2,15 @@
 bin
 depend
 doc
+obj
 
 # Ignore generated files
 callgrind*
 vgcore*
 *~
 *.swp
+*.layout
+*.depend
 
 # Ignore binary files
 *.o
