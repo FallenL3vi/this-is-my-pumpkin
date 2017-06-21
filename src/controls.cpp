@@ -9,6 +9,7 @@ void Control::keyboard()
 {
 
     player.fork.forkP1.setPosition(player.avatarP1.getPosition());
+    player.fork.fork_hbox.setPosition(player.fork.forkP1.getPosition());
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     {

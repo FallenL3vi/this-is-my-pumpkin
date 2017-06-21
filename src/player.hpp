@@ -10,18 +10,21 @@ public:
 
     Pitchfork();
     sf::RectangleShape forkP1;
+    sf::RectangleShape fork_hbox;
     sf::Texture forkTexture;
+    sf::Texture foTexture;
     void loadTextures();
 };
 
 class Player
 {
 public:
-    Enemy &enemy;
-    Player(Enemy &_enemy);
+
+    Player();
     void loadTextures();
-    int knock_strange = 10;
+    int knock_strange = 100;
     sf::RectangleShape avatarP1;
+    sf::RectangleShape avatar_hbox;
     sf::Texture playerTexture;
     Pitchfork fork;
     void move(int speedX, int speedY, bool direction);

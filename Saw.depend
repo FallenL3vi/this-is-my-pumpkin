@@ -1,9 +1,41 @@
 # depslib dependency file v1.0
-1496775608 source:c:\users\l3vi\documents\github\projects\game1\saw\main.cpp
-	<SFML/Window.hpp>
-	<SFML/Graphics.hpp>
-	"player.hpp"
+1497891008 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\controls.cpp
 	"controls.hpp"
+
+1497956289 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\controls.hpp
+	"player.hpp"
+
+1497969580 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\player.hpp
+	<SFML/Graphics.hpp>
+	"enemy.hpp"
+
+1486739997 c:\sfml-2.4.2-windows-gcc-4.9.2-tdm-32-bit\sfml-2.4.2\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/View.hpp>
 
 1486739998 c:\sfml-2.4.2-windows-gcc-4.9.2-tdm-32-bit\sfml-2.4.2\include\sfml\window.hpp
 	<SFML/System.hpp>
@@ -202,34 +234,6 @@
 
 1486739998 c:\sfml-2.4.2-windows-gcc-4.9.2-tdm-32-bit\sfml-2.4.2\include\sfml\window\windowstyle.hpp
 
-1486739997 c:\sfml-2.4.2-windows-gcc-4.9.2-tdm-32-bit\sfml-2.4.2\include\sfml\graphics.hpp
-	<SFML/Window.hpp>
-	<SFML/Graphics/BlendMode.hpp>
-	<SFML/Graphics/CircleShape.hpp>
-	<SFML/Graphics/Color.hpp>
-	<SFML/Graphics/ConvexShape.hpp>
-	<SFML/Graphics/Drawable.hpp>
-	<SFML/Graphics/Font.hpp>
-	<SFML/Graphics/Glyph.hpp>
-	<SFML/Graphics/Image.hpp>
-	<SFML/Graphics/PrimitiveType.hpp>
-	<SFML/Graphics/Rect.hpp>
-	<SFML/Graphics/RectangleShape.hpp>
-	<SFML/Graphics/RenderStates.hpp>
-	<SFML/Graphics/RenderTarget.hpp>
-	<SFML/Graphics/RenderTexture.hpp>
-	<SFML/Graphics/RenderWindow.hpp>
-	<SFML/Graphics/Shader.hpp>
-	<SFML/Graphics/Shape.hpp>
-	<SFML/Graphics/Sprite.hpp>
-	<SFML/Graphics/Text.hpp>
-	<SFML/Graphics/Texture.hpp>
-	<SFML/Graphics/Transform.hpp>
-	<SFML/Graphics/Transformable.hpp>
-	<SFML/Graphics/Vertex.hpp>
-	<SFML/Graphics/VertexArray.hpp>
-	<SFML/Graphics/View.hpp>
-
 1486739997 c:\sfml-2.4.2-windows-gcc-4.9.2-tdm-32-bit\sfml-2.4.2\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 
@@ -393,75 +397,29 @@
 	<string>
 	<vector>
 
-1496157179 c:\users\l3vi\documents\github\projects\game1\saw\player.cpp
+1497968151 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy.hpp
+	"SFML/Graphics.hpp"
+
+1497969525 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy.cpp
+	"enemy.hpp"
+	"enemy_controls.hpp"
+	"Collision.hpp"
+
+1497956289 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy_controls.hpp
+	"enemy.hpp"
+
+1498055192 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\collision.hpp
 	"player.hpp"
+	"enemy.hpp"
 
-1496349497 c:\users\l3vi\documents\github\projects\game1\saw\player.hpp
-	<SFML/Graphics.hpp>
+1497956657 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy_controls.cpp
+	"enemy_controls.hpp"
 
-1496775802 source:c:\users\l3vi\documents\github\projects\game1\saw\player.cpp
-	"player.hpp"
-	"controls.hpp"
-
-1496775608 source:c:\users\l3vi\documents\github\projects\game1\saw\controls.cpp
-	"controls.hpp"
-
-1496773311 c:\users\l3vi\documents\github\projects\game1\saw\controls.hpp
-	"player.hpp"
-
-1496584359 source:c:\users\l3vi\documents\github\projects\game1\saw\core.cpp
-
-1496775608 source:c:\users\l3vi\documents\github\projects\game1\saw\src\controls.cpp
-	"controls.hpp"
-
-1496773311 c:\users\l3vi\documents\github\projects\game1\saw\src\controls.hpp
-	"player.hpp"
-
-1496349497 c:\users\l3vi\documents\github\projects\game1\saw\src\player.hpp
-	<SFML/Graphics.hpp>
-
-1496584359 source:c:\users\l3vi\documents\github\projects\game1\saw\src\core.cpp
-
-1496343835 source:c:\users\l3vi\documents\github\projects\game1\saw\src\keyboard.cpp
-
-1496779377 source:c:\users\l3vi\documents\github\projects\game1\saw\src\main.cpp
+1497969547 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\main.cpp
 	<SFML/Window.hpp>
 	<SFML/Graphics.hpp>
 	"player.hpp"
 	"controls.hpp"
 	"enemy.hpp"
-
-1496776710 source:c:\users\l3vi\documents\github\projects\game1\saw\src\player.cpp
-	"player.hpp"
-	"controls.hpp"
-
-1496779354 source:c:\users\l3vi\documents\github\projects\game1\saw\src\enemy.cpp
-	"enemy.hpp"
-
-1496779304 c:\users\l3vi\documents\github\projects\game1\saw\src\enemy.hpp
-	"player.hpp"
-	"SFML/Graphics.hpp"
-
-1497037866 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\controls.cpp
-	"controls.hpp"
-
-1497037021 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\controls.hpp
-	"player.hpp"
-
-1497037839 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\player.hpp
-	<SFML/Graphics.hpp>
-	"enemy.hpp"
-
-1497037021 c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy.hpp
-	"SFML/Graphics.hpp"
-
-1497037021 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\enemy.cpp
-	"enemy.hpp"
-
-1496956211 source:c:\users\l3vi\documents\github\this-is-my-pumpkin\src\main.cpp
-	<SFML/Window.hpp>
-	<SFML/Graphics.hpp>
-	"player.hpp"
-	"controls.hpp"
-	"enemy.hpp"
+	"enemy_controls.hpp"
 

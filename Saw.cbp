@@ -3,6 +3,7 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="Saw" />
+		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -39,13 +40,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="controls.cpp" />
-		<Unit filename="controls.hpp" />
-		<Unit filename="core.cpp" />
-		<Unit filename="core.hpp" />
-		<Unit filename="main.cpp" />
-		<Unit filename="player.cpp" />
-		<Unit filename="player.hpp" />
+		<Unit filename="src/Collision.cpp" />
+		<Unit filename="src/Collision.hpp" />
+		<Unit filename="src/controls.cpp" />
+		<Unit filename="src/controls.hpp" />
+		<Unit filename="src/enemy.cpp" />
+		<Unit filename="src/enemy.hpp" />
+		<Unit filename="src/enemy_controls.cpp" />
+		<Unit filename="src/enemy_controls.hpp" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/player.cpp" />
+		<Unit filename="src/player.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

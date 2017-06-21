@@ -9,7 +9,5 @@ public:
     bool direction = 0;
     Control(Player &_player);
     void keyboard();
-    void moving_l(bool direct);
-    void moving_r(bool direct);
     Player &player;
 };
